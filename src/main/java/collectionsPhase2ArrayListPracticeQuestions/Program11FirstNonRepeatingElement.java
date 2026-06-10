@@ -55,6 +55,8 @@ public class Program11FirstNonRepeatingElement
 	
 	public static void firstNonRepeatingElement()
 	{
+		
+		boolean flag = false;
 		for ( int i = 0 ; i < arrList.size() ; i++ )
 		{
 			int count = 0;
@@ -77,8 +79,13 @@ public class Program11FirstNonRepeatingElement
 			if( count == 0 )
 			{
 				System.out.println("The first non-repeating element in the arraylist is : "+arrList.get(i));
+				flag = true;
 				break;
 			}
+		}
+		if ( !flag )
+		{
+			System.out.println("No non-repeating elements are present in the arraylist.");
 		}
 	}
 	
