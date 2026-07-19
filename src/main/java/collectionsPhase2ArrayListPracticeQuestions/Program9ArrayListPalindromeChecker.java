@@ -31,6 +31,12 @@ public class Program9ArrayListPalindromeChecker
 		System.out.println("Enter the type of arraylist you want to create ( 1 - Integer / 2 - String ) : ");
 		int arrayCreationType = sc.nextInt();
 		
+		if ( arrayCreationType != 1 && arrayCreationType != 2 )
+		{
+			System.out.println("The input you entered is invalid.");
+			return;
+		}
+		
 		System.out.println("Enter the number of elements you want to insert into the arraylist : ");
 		int length = sc.nextInt();
 		
@@ -53,9 +59,14 @@ public class Program9ArrayListPalindromeChecker
 				{
 					arrList.add( sc.nextInt() );
 				}
-				if ( arrayCreationType == 2 )
+				else if ( arrayCreationType == 2 )
 				{
 					arrList.add(sc.nextLine());
+				}
+				else
+				{
+					System.out.println("You have entered an invalid input.");
+					return;
 				}
 			}
 		}

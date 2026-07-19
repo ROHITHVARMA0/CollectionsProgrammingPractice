@@ -65,7 +65,7 @@ public class Program10ReversePartOfArrayList
 		System.out.println("Do you want to reverse a part of arraylist ( YES / NO ) : ");
 		if ( yesNoOption( sc.next() ) )
 		{
-			System.out.println("Enter the element index from where you want to reverse the index : ");
+			System.out.println("Enter the element index from where you want to reverse the arraylist : ");
 			int index = sc.nextInt();
 			index = index - 1;
 			if ( index < 0 || index > arrList.size() )

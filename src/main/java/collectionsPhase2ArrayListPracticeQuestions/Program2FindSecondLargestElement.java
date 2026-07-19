@@ -84,6 +84,7 @@ public class Program2FindSecondLargestElement
 //				}
 //			}
 //		}
+		
 		PrintArrayPrintlnMethod.printArray(arrList);
 		System.out.println("The second largest element in the arraylist according to the length is "+arrList.get(arrList.size()-2));
 	}

@@ -101,11 +101,11 @@ public class Program7RotateArrayList
 		int actualRotation = 0;
 		if ( arrListInt != null )
 		{
-			if ( arrListInt.size() ==1 )
+			if ( arrListInt.size() == 1 )
 			{
 				System.out.println("The size of the arraylist is 1 and even if we do any number of rotations the resulted arraylist is same.");
 			}
-			else
+			else if ( arrListInt.size() > 1 )
 			{
 				actualRotation = rotation % arrListInt.size() ;
 				for ( int i = 0 ; i < actualRotation ; i++ )
@@ -115,14 +115,19 @@ public class Program7RotateArrayList
 					arrListInt.add(temp);
 				}
 			}
+			else
+			{
+				System.out.println("The input that you entered is not valid");
+				return;
+			}
 		}
 		else
 		{
-			if ( arrListStr.size() ==1 )
+			if ( arrListStr.size() == 1 )
 			{
 				System.out.println("The size of the arraylist is 1 and even if we do any number of rotations the resulted arraylist is same.");
 			}
-			else 
+			else if ( arrListStr.size() > 1 )
 			{
 				actualRotation = rotation % arrListStr.size() ;
 				for ( int i = 0 ; i < actualRotation ; i++ )
@@ -131,6 +136,11 @@ public class Program7RotateArrayList
 					arrListStr.remove(0);
 					arrListStr.add(temp);
 				}
+			}
+			else
+			{
+				System.out.println("The input that you entered is not valid");
+				return;
 			}
 		}
 		

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Program13SortUsingBuiltInMethods 
 {
-static Scanner sc = new Scanner(System.in);
+	static Scanner sc = new Scanner(System.in);
 	
 	static ArrayList<Integer> arrListInt;
 	static ArrayList<String> arrListStr;
@@ -23,7 +23,7 @@ static Scanner sc = new Scanner(System.in);
 			System.out.println("Exiting..");
 			return;
 		}
-		if ( arrListInt == null || arrListInt.isEmpty() || arrListStr == null || arrListStr.isEmpty() ) 
+		if ( ( arrListInt == null || arrListInt.isEmpty() ) && ( arrListStr == null || arrListStr.isEmpty() ) ) 
 		{
 			System.out.println("ArrayList is empty. Nothing to sort.");
 			return;
@@ -35,18 +35,20 @@ static Scanner sc = new Scanner(System.in);
 				System.out.println("\nOriginal ArrayList: " + arrListInt);
 				System.out.print("Sorted ArrayList using Sort method : ");
 				arrListInt.sort(null);
-				System.out.print(arrListInt);
-				System.out.println("Sorted ArrayList using Collections Sort Method : ");
+				System.out.println(arrListInt);
+				System.out.print("Sorted ArrayList using Collections Sort Method : ");
 				Collections.sort(arrListInt);
+				System.out.println(arrListInt);
 			}
-			else
+			else if ( arrListStr != null )
 			{
 				System.out.println("\nOriginal ArrayList: " + arrListStr);
 				System.out.print("Sorted ArrayList using Sort method : ");
 				arrListStr.sort(null);
-				System.out.print(arrListStr);
-				System.out.println("Sorted ArrayList using Collections Sort Method : ");
+				System.out.println(arrListStr);
+				System.out.print("Sorted ArrayList using Collections Sort Method : ");
 				Collections.sort(arrListStr);
+				System.out.println(arrListStr);
 			}
 		}
 		
@@ -84,6 +86,11 @@ static Scanner sc = new Scanner(System.in);
 			System.out.print("Enter the " + (i+1) + "th element to insert into the arraylist : " );
 			arrListInt.add(sc.nextInt());
 		}
+		
+//		if ( arrListInt.size() > 1 && arrListInt != null )
+//		{
+//			intArrayListSorting();
+//		}
 	}
 	
 	
@@ -99,11 +106,22 @@ static Scanner sc = new Scanner(System.in);
 			}
 			arrListStr.add(sc.nextLine());
 		}
+//		if ( arrListStr.size() > 1 && arrListStr != null )
+//		{
+//			strArrayListSorting();
+//		}
 	}
 	
 	public static void intArrayListSorting()
 	{
-		
+		arrListInt.sort(null);
+		System.out.println("The arraylist after sorting using built-in sort method : "+arrListInt);
+	}
+	
+	public static void strArrayListSorting()
+	{
+		arrListStr.sort(null);
+		System.out.println("The arraylist after sorting using built-in sort method : "+arrListStr);
 	}
 	
 	public static boolean yesNoOption( String str )

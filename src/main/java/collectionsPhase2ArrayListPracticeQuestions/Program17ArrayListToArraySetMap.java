@@ -10,7 +10,7 @@ import java.util.Map;
 public class Program17ArrayListToArraySetMap 
 {
 	
-static Scanner sc = new Scanner(System.in);
+	static Scanner sc = new Scanner(System.in);
 	
 	static ArrayList<Integer> arrListInt;
 	static ArrayList<String> arrListStr;
@@ -129,6 +129,7 @@ static Scanner sc = new Scanner(System.in);
 	{
 		if( arrListInt != null )
 		{
+//			Set<Integer> intSet = new HashSet<Integer>(arrListInt);
 			Set<Integer> intSet = new HashSet<Integer>();
 			for ( int num : arrListInt )
 			{
@@ -138,6 +139,7 @@ static Scanner sc = new Scanner(System.in);
 		}
 		else if( arrListStr != null )
 		{
+//			Set<String> strSet = new HashSet<String>(arrListStr);
 			Set<String> strSet = new HashSet<String>();
 			for ( String str : arrListStr )
 			{

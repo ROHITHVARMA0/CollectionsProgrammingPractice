@@ -13,11 +13,14 @@ public class Program12AllPairsWithGivenSum
 	{
 		createIntArrayList();
 		
-		findSumPairs();
+		if ( arrList != null && arrList.size() > 1 )
+		{
+			findSumPairs();
+		}
 	}
 	
 	public static void createIntArrayList()
-	{
+	{		
 		arrList = new ArrayList<Integer>();
 		
 		System.out.println("Enter the number of elements you want to insert into the arraylist : ");
@@ -40,6 +43,7 @@ public class Program12AllPairsWithGivenSum
 	
 	public static void findSumPairs()
 	{
+		
 		System.out.println("Enter the sum you need to find in the arraylist : ");
 		int sum = sc.nextInt();
 		
