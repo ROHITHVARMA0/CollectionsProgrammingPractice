@@ -115,7 +115,7 @@ public class Program16LinkedListVsArrayDeque
 		long arrDequeRemoveEndTime = System.nanoTime();
 		long arrDequeRemoveDuration = arrDequeRemoveEndTime - arrDequeRemoveStartTime;
 		System.out.println("The time taken to insert 1000 elements using getLast method into ArrayDeque : "+arrDequeRemoveDuration+" nanoSec");
-
+		
 	}
 	
 	public static boolean yesNoOption ( String str )

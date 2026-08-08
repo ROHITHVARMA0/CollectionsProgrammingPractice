@@ -16,7 +16,6 @@ public class ListNode
 	{
 		this.val = val;
 		this.next = null;
-		this.prev = null;
 	}
 	public ListNode ( int val , ListNode next ) 
 	{
@@ -24,5 +23,10 @@ public class ListNode
 		this.next = next;
 	}
 	
+	public void ListNodePrev(int val)
+	{
+		this.val = val;
+		this.prev = null;
+	}
 	
 }
