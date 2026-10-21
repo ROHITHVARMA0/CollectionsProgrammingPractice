@@ -57,11 +57,9 @@ public class Program24TraverseListUsingIterator
 			{
 				System.out.println("You have entered an invalid input, you only need to give integers as input.");
 				return;
-			}
-						
+			}			
 		}
-		
-			listIterationUsingIterator(linList, arrList);
+		listIterationUsingIterator(linList, arrList);
 	}
 	
 	public static void listIterationUsingIterator(List<Integer> linList , List<Integer> arrList)
